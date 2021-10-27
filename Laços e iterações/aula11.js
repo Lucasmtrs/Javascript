@@ -25,6 +25,17 @@ for(let i = 0; i < 5; i++){
 //(se colocar i <= 5  ele imprime 5 também)
 
 //ex.2 For usando if para números impares
-for(let a = 1; a <= 15; i++){
-    if(i);
+for(let a = 1; a <= 15; a++){
+    if(a);
 };
+
+
+cars = ["uno", "marea", "celtinha"];
+for(let i = 0; i < cars.length; i++){
+    console.log(cars[i])
+}
+
+numeros = [5, 6, 7];
+for(let a = 0; a < numeros.length; a++){
+    console.log(numeros[a] ** 2)
+}
