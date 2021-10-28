@@ -26,8 +26,17 @@ for(let i = 0; i < 5; i++){
 
 //ex.2 For usando if para números impares
 for(let a = 1; a <= 15; a++){
-    if(a);
+    if(a % 2 !== 0){
+        console.log(a);
+    };
 };
+
+//ex.3 For usando if para decrescer números pares apenas
+for(let b = 6; b >= 1; b--){
+    if(b % 2 == 0){
+        console.log(b);
+    }
+}
 
 
 cars = ["uno", "marea", "celtinha"];
@@ -39,3 +48,4 @@ numeros = [5, 6, 7];
 for(let a = 0; a < numeros.length; a++){
     console.log(numeros[a] ** 2)
 }
+
