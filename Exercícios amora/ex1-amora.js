@@ -50,17 +50,25 @@ console.log(myBathroom)
 
 
 
-
-
-
-
-
 //Array
 //- Criar um novo array
 //- Adicionar um novo item no final do array
 //- Remover o último item do array
 //- Criar um novo array e copiar todos os itens do primeiro array criado anteriormente, adicionando também um novo item no final do array. (Depois, tente adicionar no início) (Com e sem spread operator)
 //- Realize a desestruturação de um array e imprima os dois primeiros itens.
+
+let familyAges = [28,56,48,54];
+
+familyAges.push(65); //nomeDaVariável.push(); adiciona um último item ao array;
+
+console.log(familyAges);
+
+familyAges.length = 4; //nomeDaVariavel.pop(); também remove o ultimo item
+console.log(familyAges);
+
+
+
+
 
 //BÔNUS: Se sentir que conseguiu evoluir rapidamente nos Arrays, "dê uma olhada" nos métodos .map, .filter, .find, .reducer
 
@@ -70,3 +78,5 @@ console.log(myBathroom)
 //- Realize a mesma tarefa usando a classe new Date() para recuperar o ano atual, ao invés de usar 2021 como referência
 //(https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date)
 //- Modifique a função para que ela receba um segundo parâmetro chamado "name" que, se não for passado um segundo parâmetro para função, ele terá como valor padrão "Lorem Ipsum" (Dica: você NÃO deve criar uma nova variável para receber esse valor padrão) 
+
+
