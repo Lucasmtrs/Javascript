@@ -2,30 +2,33 @@
 //- Criar variáveis (var | let | const)
 //- Alterar valor da variáveis (var | let)
 
-var brands = "crysler";
+var brands = "chrysler";
 
 let age = 58;
 
 const isApproved = false;
 
 
-var brands = "lotus";
+brands = "lotus";
 console.log(brands);  //resultado Lotus
 
 age = 101;
 console.log(age); //resultado 101
 
 
+/*
+comentário 
+ */ 
 
-
-
-//Objeto
-//- Criar um novo objeto
-//- Acessar um atributo de um objeto
-//- Alterar um atributo de um objeto depois de criado
-//- Adicionar um novo atributo ao mesmo objeto depois de criado
-//- Criar um novo objeto e copiar todos os atributos do primeiro objeto criado anteriormente, adicionando também um novo atributo qualquer. (Com e sem spread operator)
-//- Realize a desestruturação de um objeto e imprima ao menos dois atributos
+/*
+  Objeto
+- Criar um novo objeto
+- Acessar um atributo de um objeto
+- Alterar um atributo de um objeto depois de criado
+- Adicionar um novo atributo ao mesmo objeto depois de criado
+- Criar um novo objeto e copiar todos os atributos do primeiro objeto criado anteriormente, adicionando também um novo atributo qualquer. (Com e sem spread operator)
+- Realize a desestruturação de um objeto e imprima ao menos dois atributos
+*/
 
 //parte 1
 let myBedroom = new Object();
@@ -41,12 +44,18 @@ myBedroom['floorColor'] = "grey"
 console.log(myBedroom);
 
 //parte 2
-let myBathroom = { myBedroom };
+let myBathroom = new Object();
+myBathroom.floorMaterial = "ceramic";
+ { myBedroom, myBathroom.floorMaterial };
 
-console.log(myBathroom)
+console.log(myBathroom);
 
+let mySuite = { ...myBedroom, ...myBathroom }; //com spread operator
+console.log(mySuite);
 
+let myHouse = Object.assign(myBedroom, myBathroom);
 
+console.log(myHouse);
 
 
 
@@ -57,7 +66,7 @@ console.log(myBathroom)
 //- Criar um novo array e copiar todos os itens do primeiro array criado anteriormente, adicionando também um novo item no final do array. (Depois, tente adicionar no início) (Com e sem spread operator)
 //- Realize a desestruturação de um array e imprima os dois primeiros itens.
 
-let familyAges = [28,56,48,54];
+const familyAges = [28,56,48,54];
 
 familyAges.push(65); //nomeDaVariável.push(); adiciona um último item ao array;
 
@@ -66,7 +75,24 @@ console.log(familyAges);
 familyAges.length = 4; //nomeDaVariavel.pop(); também remove o ultimo item
 console.log(familyAges);
 
+const grandmaAge = [92];
 
+const allFamilyAges = [ ...familyAges, ...grandmaAge ]; //com spread operator
+console.log(allFamilyAges);
+
+
+const allAges = [];
+
+for (const age of familyAges) {
+  allAges.push(age)
+};  
+
+console.log({allAges}); //colocar {} quando tiver múltiplos consoles logs para diferenciar 
+
+//debugger //permite que o codigo seja executado 
+
+// for ...of usado para percorrer um Array
+// for ...in usado para percorrer um objeto
 
 
 
