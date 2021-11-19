@@ -23,7 +23,7 @@ function changeVarValue() {
 
 console.log(changeVarValue(x, y));
 
-/*
+
 var arrayMax = [45,28,36,54,63,52,85];
 
 
@@ -40,4 +40,4 @@ function retornaArrayOrdenado(x,y){
 
 arrayDesorganizado.sort(retornaArrayOrdenado); 
 
-*/
+console.log(arrayDesorganizado);
