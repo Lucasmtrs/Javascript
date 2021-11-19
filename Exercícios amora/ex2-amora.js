@@ -41,3 +41,5 @@ function retornaArrayOrdenado(x,y){
 arrayDesorganizado.sort(retornaArrayOrdenado); 
 
 console.log(arrayDesorganizado);
+
+//Sort() é uma função de comparação baseada em ordem alfabética Unicode, para resolver isso criou-se uma função própria para se devolver números inteiros.
