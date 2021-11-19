@@ -24,9 +24,14 @@ function changeVarValue() {
 console.log(changeVarValue(x, y));
 
 
-var arrayMax = [45,28,36,54,63,52,85];
+let arrayMax = [45,28,36,54,63,52,85];
+let maxValue = arrayMax.reduce(function(x, y) {
+    return Math.max(x, y);
+});
 
+//Math.max(...arrayMax);
 
+console.log(maxValue)
 
 
 
